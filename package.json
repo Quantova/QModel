@@ -1,0 +1,70 @@
+{
+  "name": "@quantovainc/qmodel",
+  "version": "0.1.0",
+  "description": "Post quantum AI model and dataset provenance for the Quantova network that proves the register, dataset, weights, evaluation and release records of a model with FIPS 204 signatures and Quantova time proofs.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "wasm/qmodel_native.js",
+    "wasm/qmodel_native_bg.wasm",
+    "wasm/qmodel_native.d.ts",
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "NOTICE",
+    "AUTHORS"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "@quantovainc/qstamp": "0.6.14"
+  },
+  "keywords": [
+    "post-quantum",
+    "quantum-safe",
+    "ai-provenance",
+    "model-provenance",
+    "dataset-provenance",
+    "model-signing",
+    "ml-dsa",
+    "fips-204",
+    "quantova"
+  ],
+  "license": "Apache-2.0 OR MIT",
+  "author": "Quantova Inc",
+  "homepage": "https://github.com/Quantova/QModel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quantova/QModel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Quantova/QModel/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "eslint": "9.39.1",
+    "eslint-plugin-security": "3.0.1",
+    "globals": "16.5.0"
+  }
+}
