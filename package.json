@@ -1,6 +1,6 @@
 {
   "name": "@quantovainc/qmodel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Post quantum AI model and dataset provenance for the Quantova network that proves the register, dataset, weights, evaluation and release records of a model with FIPS 204 signatures and Quantova time proofs.",
   "main": "index.js",
   "types": "index.d.ts",
